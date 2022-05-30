@@ -1337,7 +1337,7 @@ class BaseModel
         }
     }
 
-    private function realGetConn()
+    protected function realGetConn()
     {
         if (! $this->in_transaction) {
             $this->pdo = $this->pool->getConnection();
