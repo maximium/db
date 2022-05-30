@@ -51,7 +51,7 @@ class BaseModel
 
     protected $errorInfo;
 
-    private $in_transaction = false;
+    protected $in_transaction = false;
 
     public function __construct($config = null)
     {
